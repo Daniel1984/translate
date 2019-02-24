@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"app.translate/models"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("translate")
+	db := models.GetDB()
+	fmt.Println("translate", db)
 }
